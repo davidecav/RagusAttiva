@@ -1,0 +1,55 @@
+
+    .idi:hover .figlio{
+
+        animation: animazione 1s ease-in;
+  
+  
+      }
+  
+      @keyframes animazione{
+  
+        0%{
+          transform:translateX(0%);
+
+
+          background: linear-gradient(70deg, #0f4900, #349208);
+              
+        }
+        33%{
+          background: linear-gradient(70deg, #24491b, #1d0892);
+
+          transform:translateX(0%)
+        }
+        66%{
+          transform:translateY(00%)
+        }
+        100%{
+          transform:translateX(0%);
+          background: linear-gradient(70deg, #a50f0f, #922f08);
+
+        }
+  
+  
+  
+      }
+
+      .idi{
+
+
+        height: 400px;
+        width: 400px;
+        background-color: blue;
+          transition: transform ease-in;
+      }
+
+
+      .figlio{
+
+        height: 200px;
+        width: 200px;
+        background-color: red;
+
+
+
+
+      }

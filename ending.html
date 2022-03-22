@@ -1,0 +1,148 @@
+
+
+    <!--prima jquery poi bootstrap    -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+    
+
+    
+   <script type="text/javascript">
+  
+
+
+  function adottaunkmfunction() {
+
+    if($("#adottakm").is(":checked")){    
+      
+      $("#kmdaadottare").show();
+    }else{
+      $("#kmdaadottare").hide();
+
+    }
+};
+
+$(".infbutton").click(function(){
+    $(".inform").toggle();
+  });
+  /*
+function informativa(){
+
+  $(".inform").toggle();
+  
+}*/
+
+
+
+
+  function ingrandisci(){
+    
+
+    var a = $(this).width();
+    var b = $(".oggGalleria").width();
+
+
+    if(a==b){
+      $(this).css("width","90%");
+      
+      console.log(a);
+      console.log(b);
+
+      if(b > 300 ){
+
+        $(this).css("width","20%");
+
+      }
+
+
+    }else{
+      $(this).css("width","20%");
+      
+      console.log(a);
+      console.log(b);
+      
+      
+    }
+  }
+
+
+  $(function() {
+      $("input[name='modulo']").click(
+        function(){
+          if ($("#informativa").is(":not(:checked)")){
+              alert("Attenzione! Non hai dato il tuo assenso per il trattamento dei dati personali.");
+              return;
+            } else {  
+             // document.forms['modulo'].submit(); 
+             // alert("Grazie! Hai dato il tuo assenso per il trattamento dei dati personali."); 
+             
+              }
+        });
+  });
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+    $(document).ready(function(){
+
+
+      for(i = 0 ; i<$(".oggGalleria").length ; i++){
+
+
+      }
+
+      
+      
+      $(".oggGalleria").click(ingrandisci);
+
+
+
+      //////////////colore bottone
+    
+
+      // $(".buttontoright").hover(
+      // function(){
+      //   $(this).css("background-color","rgb(117, 222, 255)");
+      // },
+      // function(){
+      //   $(this).css("background-color","rgb(187, 212, 255)");
+      // }
+      // );
+    
+        
+        /////////////////colore bottone 2
+        
+
+            });
+
+
+
+  </script>
+    
+  </body>
+</html>
